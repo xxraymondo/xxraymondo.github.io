@@ -200,9 +200,11 @@ class AllTrendingComponent {
         //     $("body").css("overflow","auto")
         //   })
         // }) 
-        jquery__WEBPACK_IMPORTED_MODULE_1__(document).ready(function () {
-            jquery__WEBPACK_IMPORTED_MODULE_1__(".loading").slideUp(1200, function () {
-                jquery__WEBPACK_IMPORTED_MODULE_1__("body").css("overflow", "auto");
+        window.addEventListener('load', (event) => {
+            jquery__WEBPACK_IMPORTED_MODULE_1__(document).ready(function () {
+                jquery__WEBPACK_IMPORTED_MODULE_1__(".loading").slideUp(1200, function () {
+                    jquery__WEBPACK_IMPORTED_MODULE_1__("body").css("overflow", "auto");
+                });
             });
         });
     }
