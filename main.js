@@ -200,11 +200,11 @@ class AllTrendingComponent {
         //     $("body").css("overflow","auto")
         //   })
         // }) 
-        window.addEventListener('load', (event) => {
-            jquery__WEBPACK_IMPORTED_MODULE_1__(document).ready(function () {
-                jquery__WEBPACK_IMPORTED_MODULE_1__(".loading").slideUp(1200, function () {
-                    jquery__WEBPACK_IMPORTED_MODULE_1__("body").css("overflow", "auto");
-                });
+        // window.addEventListener('load', (event) => {
+        // });
+        jquery__WEBPACK_IMPORTED_MODULE_1__(document).ready(function () {
+            jquery__WEBPACK_IMPORTED_MODULE_1__(".loading").slideUp(1200, function () {
+                jquery__WEBPACK_IMPORTED_MODULE_1__("body").css("overflow", "auto");
             });
         });
     }
@@ -320,7 +320,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: "", component: _all_trending_all_trending_component__WEBPACK_IMPORTED_MODULE_8__["AllTrendingComponent"] },
+    { path: "", redirectTo: 'home', pathMatch: 'full' },
     { path: "home", component: _all_trending_all_trending_component__WEBPACK_IMPORTED_MODULE_8__["AllTrendingComponent"] },
     { path: "d-t-movies", component: _daliy_trending_movies_daliy_trending_movies_component__WEBPACK_IMPORTED_MODULE_2__["DaliyTrendingMoviesComponent"] },
     { path: "w-t-movies", component: _weekly_trending_movies_weekly_trending_movies_component__WEBPACK_IMPORTED_MODULE_3__["WeeklyTrendingMoviesComponent"] },
